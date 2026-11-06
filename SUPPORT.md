@@ -6,4 +6,4 @@ A useful bug report, a translation, testing with another Subsonic server, or sha
 
 You can [sponsor hwanlog on GitHub](https://github.com/sponsors/ljaehwan). Sponsorship is optional and supports time spent on fixes, compatibility testing and improvements. All app features remain available to everyone.
 
-For app questions, use [Issues](https://github.com/ljaehwan/Musonic-android/issues/new/choose). For private support or privacy requests, email **hwandevlog@gmail.com**.
+For app questions, use [Issues](https://github.com/ljaehwan/Musonic/issues/new/choose). For private support or privacy requests, email **hwandevlog@gmail.com**.

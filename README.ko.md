@@ -4,7 +4,7 @@
 
 Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니다. Navidrome을 비롯한 호환 서버의 앨범과 아티스트를 탐색하고, 최근 들은 곡을 다시 재생할 수 있습니다. Kotlin과 Jetpack Compose로 만들었으며 무료로 사용할 수 있습니다. 광고와 분석 SDK는 없습니다.
 
-<p align="center"><img src="docs/images/library.png" width="23%" alt="앨범 보관함"> <img src="docs/images/player.png" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
+<p align="center"><img src="docs/images/library.jpg" width="23%" alt="앨범 보관함"> <img src="docs/images/player.jpg" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
 
 ## 주요 기능
 
@@ -33,12 +33,18 @@ JDK 17과 Android SDK 36을 준비한 뒤 다음 명령을 실행합니다.
 ./gradlew testDebugUnitTest testPlayUnitTest lintDebug lintPlay assembleDebug
 ```
 
-자세한 내용은 [빌드 안내](docs/BUILDING.md)와 [기여 안내](CONTRIBUTING.md)에 있습니다. 오류나 기능 제안은 [Issues](https://github.com/ljaehwan/Musonic-android/issues/new/choose)로 보내주세요. 비밀번호와 인증정보가 포함된 URL은 공개하지 말아 주세요.
+자세한 내용은 [빌드 안내](docs/BUILDING.md)와 [기여 안내](CONTRIBUTING.md)에 있습니다. 오류나 기능 제안은 [Issues](https://github.com/ljaehwan/Musonic/issues/new/choose)로 보내주세요. 비밀번호와 인증정보가 포함된 URL은 공개하지 말아 주세요.
 
 마음에 드셨다면 별표를 남겨주세요. 번역, 사용 후기, 오류 제보도 도움이 됩니다. [프로젝트 지원 안내](SUPPORT.md)
 
-![일별 GitHub 별표 수](docs/stars/history.svg)
+## Star history
 
-공개 이후의 일별 별표 수를 기록합니다. 별표 취소도 반영하므로 숫자가 줄어들 수 있습니다.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date&amp;theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date">
+  <img alt="Musonic Star History" src="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date">
+</picture>
+
+[Star History에서 보기](https://www.star-history.com/#ljaehwan/Musonic&Date)
 
 [MIT 라이선스](LICENSE) · [개인정보처리방침](https://ljaehwan.github.io/Musonic-releases/privacy/) · 문의: **hwandevlog@gmail.com**

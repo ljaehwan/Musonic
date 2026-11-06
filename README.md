@@ -1,11 +1,11 @@
 <p align="center"><img src="brand/musonic-logo.png" alt="Musonic" width="300"></p>
 <p align="center">An Android player for the music on your own server.</p>
 <p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">Download APK</a> · <a href="README.ko.md">한국어</a> · <a href="docs/BUILDING.md">Build from source</a> · <a href="https://github.com/sponsors/ljaehwan">Sponsor</a></p>
-<p align="center"><a href="https://github.com/ljaehwan/Musonic-android/actions/workflows/android.yml"><img src="https://github.com/ljaehwan/Musonic-android/actions/workflows/android.yml/badge.svg" alt="Android build"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a> <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84" alt="Android 8.0 or later"> <a href="https://github.com/ljaehwan/Musonic-android/stargazers"><img src="https://img.shields.io/github/stars/ljaehwan/Musonic-android?style=flat" alt="GitHub stars"></a></p>
+<p align="center"><a href="https://github.com/ljaehwan/Musonic/actions/workflows/android.yml"><img src="https://github.com/ljaehwan/Musonic/actions/workflows/android.yml/badge.svg" alt="Android build"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a> <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84" alt="Android 8.0 or later"> <a href="https://github.com/ljaehwan/Musonic/stargazers"><img src="https://img.shields.io/github/stars/ljaehwan/Musonic?style=flat" alt="GitHub stars"></a></p>
 
 Musonic connects to Subsonic and OpenSubsonic servers, including Navidrome. It keeps your albums, recent listens and sound controls close at hand. Written in Kotlin with Jetpack Compose. Free to use, with no ads or analytics SDKs.
 
-<p align="center"><img src="docs/images/library.png" width="23%" alt="Album library"> <img src="docs/images/player.png" width="23%" alt="Now playing"> <img src="docs/images/equalizer.png" width="23%" alt="Ten-band equalizer"> <img src="docs/images/presets.png" width="23%" alt="Sound presets"></p>
+<p align="center"><img src="docs/images/library.jpg" width="23%" alt="Album library"> <img src="docs/images/player.jpg" width="23%" alt="Now playing"> <img src="docs/images/equalizer.png" width="23%" alt="Ten-band equalizer"> <img src="docs/images/presets.png" width="23%" alt="Sound presets"></p>
 
 ## What it does
 
@@ -40,15 +40,19 @@ The APK is written to `app/build/outputs/apk/debug/app-debug.apk`. No server cre
 
 Bug reports, translations and small fixes are welcome. If something breaks, include your Android version, Musonic version, server software and steps to reproduce it. Please remove passwords and authenticated URLs from logs and screenshots.
 
-For larger changes, open an [issue](https://github.com/ljaehwan/Musonic-android/issues/new/choose) first so we can agree on the scope. See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and [SECURITY.md](SECURITY.md) for private reports.
+For larger changes, open an [issue](https://github.com/ljaehwan/Musonic/issues/new/choose) first so we can agree on the scope. See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and [SECURITY.md](SECURITY.md) for private reports.
 
 If you enjoy Musonic, a star helps other people find it. [Ways to support the project](SUPPORT.md).
 
 ## Star history
 
-![Daily GitHub star count](docs/stars/history.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date&amp;theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date">
+  <img alt="Musonic Star History" src="https://api.star-history.com/svg?repos=ljaehwan/Musonic&amp;type=Date">
+</picture>
 
-Daily snapshots from this repository's launch. The chart records the total star count, so it can decrease when someone removes a star. It does not reconstruct earlier events or collect usernames.
+[View on Star History](https://www.star-history.com/#ljaehwan/Musonic&Date).
 
 ## Privacy and license
 
