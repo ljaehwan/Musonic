@@ -1,6 +1,6 @@
 <p align="center"><img src="brand/musonic-logo.png" alt="Musonic" width="300"></p>
 <p align="center">내 서버의 음악을 듣는 Android 플레이어</p>
-<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">APK 다운로드</a> · <a href="README.md">English</a></p>
+<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">APK 다운로드</a> · <a href="README.md">English</a> · <a href="https://github.com/sponsors/ljaehwan">후원</a></p>
 
 Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니다. Navidrome을 비롯한 호환 서버의 앨범과 아티스트를 탐색하고, 최근 들은 곡을 다시 재생할 수 있습니다. Kotlin과 Jetpack Compose로 만들었으며 무료로 사용할 수 있습니다. 광고와 분석 SDK는 없습니다.
 

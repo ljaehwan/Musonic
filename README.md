@@ -1,6 +1,6 @@
 <p align="center"><img src="brand/musonic-logo.png" alt="Musonic" width="300"></p>
 <p align="center">An Android player for the music on your own server.</p>
-<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">Download APK</a> · <a href="README.ko.md">한국어</a> · <a href="docs/BUILDING.md">Build from source</a></p>
+<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">Download APK</a> · <a href="README.ko.md">한국어</a> · <a href="docs/BUILDING.md">Build from source</a> · <a href="https://github.com/sponsors/ljaehwan">Sponsor</a></p>
 <p align="center"><a href="https://github.com/ljaehwan/Musonic-android/actions/workflows/android.yml"><img src="https://github.com/ljaehwan/Musonic-android/actions/workflows/android.yml/badge.svg" alt="Android build"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a> <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84" alt="Android 8.0 or later"> <a href="https://github.com/ljaehwan/Musonic-android/stargazers"><img src="https://img.shields.io/github/stars/ljaehwan/Musonic-android?style=flat" alt="GitHub stars"></a></p>
 
 Musonic connects to Subsonic and OpenSubsonic servers, including Navidrome. It keeps your albums, recent listens and sound controls close at hand. Written in Kotlin with Jetpack Compose. Free to use, with no ads or analytics SDKs.
