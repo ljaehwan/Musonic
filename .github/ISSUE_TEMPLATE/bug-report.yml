@@ -1,0 +1,30 @@
+name: Bug report
+description: Something isn't working as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove passwords, tokens and authenticated server URLs from anything you attach.
+  - type: input
+    id: versions
+    attributes:
+      label: Musonic and Android versions
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Server software and version
+      placeholder: Navidrome version, Subsonic version, etc. No server credentials.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Check for private information before attaching.

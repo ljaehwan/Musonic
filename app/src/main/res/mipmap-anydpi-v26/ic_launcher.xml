@@ -1,0 +1,1 @@
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"><background android:drawable="@color/musonic_brand"/><foreground android:drawable="@drawable/ic_musonic_foreground"/></adaptive-icon>

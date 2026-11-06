@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Musonic" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#FCFCFD</item>
+        <item name="android:statusBarColor">#FCFCFD</item>
+        <item name="android:navigationBarColor">#FCFCFD</item>
+        <item name="android:colorAccent">#D52D4D</item>
+    </style>
+</resources>

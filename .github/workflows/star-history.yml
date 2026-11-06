@@ -1,0 +1,36 @@
+name: Star history
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: star-history
+  cancel-in-progress: false
+jobs:
+  update:
+    if: github.repository == 'ljaehwan/Musonic-android'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Record today's total
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/star-history.mjs
+      - name: Save chart
+        run: |
+          git add docs/stars/counts.json docs/stars/history.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update daily star count'
+          git push origin HEAD:main

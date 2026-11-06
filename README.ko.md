@@ -1,0 +1,44 @@
+<p align="center"><img src="brand/musonic-logo.png" alt="Musonic" width="300"></p>
+<p align="center">내 서버의 음악을 듣는 Android 플레이어</p>
+<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">APK 다운로드</a> · <a href="README.md">English</a></p>
+
+Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니다. Navidrome을 비롯한 호환 서버의 앨범과 아티스트를 탐색하고, 최근 들은 곡을 다시 재생할 수 있습니다. Kotlin과 Jetpack Compose로 만들었으며 무료로 사용할 수 있습니다. 광고와 분석 SDK는 없습니다.
+
+<p align="center"><img src="docs/images/library.png" width="23%" alt="앨범 보관함"> <img src="docs/images/player.png" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
+
+## 주요 기능
+
+- 앨범·아티스트 탐색, 검색, 좋아요, 최근 재생
+- 백그라운드 재생과 잠금 화면·알림 재생 제어
+- 앱 내부 10밴드 이퀄라이저, 사용자 프리셋, 프리앰프, 좌우 채널 게인, 라우드니스 보정
+- 원본 또는 MP3 64·128·192·320 kbps 스트리밍 요청
+- 라이트·다크 모드와 한국어·영어·일본어·중국어 간체·스페인어
+- 앨범 표지 캐시와 기기 내 서버 인증정보 암호화 저장
+
+음질 변환은 서버의 트랜스코딩 지원 여부에 따라 달라집니다. Android Auto 탐색·재생 기능도 구현되어 있지만 실제 차량 검증은 진행 중입니다. [Android Auto 안내](docs/ANDROID-AUTO.md)를 참고하세요.
+
+## 설치
+
+[최신 릴리즈](https://github.com/ljaehwan/Musonic-releases/releases/latest)에서 APK를 설치한 뒤 서버 주소와 계정을 입력하세요. Android 8.0 이상이 필요하며 음악 서버와 음원은 별도로 준비해야 합니다.
+
+서버 주소는 `https://music.example.com`처럼 HTTPS를 권장합니다. GitHub APK는 직접 허용한 경우 HTTP 연결도 지원합니다. 앱에서 새 버전을 확인하고 내려받을 수 있으며, 설치 시 Android 확인 화면이 표시됩니다.
+
+Google Play는 등록 준비 중으로 아직 공개 스토어 주소가 없습니다. 직접 빌드한 앱이나 다른 배포 채널의 앱은 서명이 달라 재설치가 필요할 수 있습니다. 앱을 삭제하면 기기에 저장된 설정과 최근 재생 기록도 삭제됩니다.
+
+## 개발 및 참여
+
+JDK 17과 Android SDK 36을 준비한 뒤 다음 명령을 실행합니다.
+
+```sh
+./gradlew testDebugUnitTest testPlayUnitTest lintDebug lintPlay assembleDebug
+```
+
+자세한 내용은 [빌드 안내](docs/BUILDING.md)와 [기여 안내](CONTRIBUTING.md)에 있습니다. 오류나 기능 제안은 [Issues](https://github.com/ljaehwan/Musonic-android/issues/new/choose)로 보내주세요. 비밀번호와 인증정보가 포함된 URL은 공개하지 말아 주세요.
+
+마음에 드셨다면 별표를 남겨주세요. 번역, 사용 후기, 오류 제보도 도움이 됩니다. [프로젝트 지원 안내](SUPPORT.md)
+
+![일별 GitHub 별표 수](docs/stars/history.svg)
+
+공개 이후의 일별 별표 수를 기록합니다. 별표 취소도 반영하므로 숫자가 줄어들 수 있습니다.
+
+[MIT 라이선스](LICENSE) · [개인정보처리방침](https://ljaehwan.github.io/Musonic-releases/privacy/) · 문의: **hwandevlog@gmail.com**
