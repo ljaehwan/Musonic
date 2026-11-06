@@ -9,6 +9,7 @@ local.properties
 *.apk
 *.aab
 .env*
+!examples/navidrome/.env.example
 captures/
 artifacts/
 

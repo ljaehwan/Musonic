@@ -1,10 +1,10 @@
 <p align="center"><img src="brand/musonic-logo.png" alt="Musonic" width="300"></p>
 <p align="center">내 서버의 음악을 듣는 Android 플레이어</p>
-<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">APK 다운로드</a> · <a href="README.md">English</a> · <a href="https://github.com/sponsors/ljaehwan">후원</a></p>
+<p align="center"><a href="https://github.com/ljaehwan/Musonic-releases/releases/latest">APK 다운로드</a> · <a href="docs/SERVER-SETUP.ko.md">Docker 서버 설정</a> · <a href="README.md">English</a> · <a href="https://github.com/sponsors/ljaehwan">후원</a></p>
 
 Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니다. Navidrome을 비롯한 호환 서버의 앨범과 아티스트를 탐색하고, 최근 들은 곡을 다시 재생할 수 있습니다. Kotlin과 Jetpack Compose로 만들었으며 무료로 사용할 수 있습니다. 광고와 분석 SDK는 없습니다.
 
-<p align="center"><img src="docs/images/library.jpg" width="23%" alt="앨범 보관함"> <img src="docs/images/player.jpg" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
+<p align="center"><img src="docs/images/library.png" width="23%" alt="앨범 보관함"> <img src="docs/images/player.png" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
 
 ## 주요 기능
 
@@ -24,6 +24,14 @@ Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니�
 서버 주소는 `https://music.example.com`처럼 HTTPS를 권장합니다. GitHub APK는 직접 허용한 경우 HTTP 연결도 지원합니다. 앱에서 새 버전을 확인하고 내려받을 수 있으며, 설치 시 Android 확인 화면이 표시됩니다.
 
 Google Play는 등록 준비 중으로 아직 공개 스토어 주소가 없습니다. 직접 빌드한 앱이나 다른 배포 채널의 앱은 서명이 달라 재설치가 필요할 수 있습니다. 앱을 삭제하면 기기에 저장된 설정과 최근 재생 기록도 삭제됩니다.
+
+## 음악 서버가 없다면
+
+PC·NAS·홈 서버에 **Navidrome을 Docker로 실행**하고 음악 폴더를 연결하세요. Musonic에는 해당 서버 주소와 직접 만든 계정을 입력하면 됩니다.
+
+[Docker Compose 예제](examples/navidrome)는 음악 폴더를 읽기 전용으로 연결하고 서버 DB를 별도로 보관합니다. [설정 안내](docs/SERVER-SETUP.ko.md)에 첫 계정 생성부터 Wi-Fi 연결, 집 밖에서 HTTPS로 듣는 방법까지 정리했습니다. Musonic 계정이나 구독은 필요하지 않습니다.
+
+기존 Subsonic/OpenSubsonic 서버가 있다면 새로 설치하지 않고 그대로 연결할 수 있습니다.
 
 ## 개발 및 참여
 

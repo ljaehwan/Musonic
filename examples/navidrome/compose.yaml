@@ -1,0 +1,19 @@
+services:
+  navidrome:
+    image: navidrome/navidrome:0.64.2
+    user: "${NAVIDROME_UID:-1000}:${NAVIDROME_GID:-1000}"
+    restart: unless-stopped
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${HTTP_PORT:-4533}:4533"
+    volumes:
+      - type: bind
+        source: ${DATA_PATH:-./data}
+        target: /data
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${MUSIC_PATH:?Set MUSIC_PATH in .env to your existing music folder}
+        target: /music
+        read_only: true
+        bind:
+          create_host_path: false
