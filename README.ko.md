@@ -4,7 +4,7 @@
 
 Musonic은 Subsonic/OpenSubsonic 호환 서버에 연결하는 음악 앱입니다. Navidrome을 비롯한 호환 서버의 앨범과 아티스트를 탐색하고, 최근 들은 곡을 다시 재생할 수 있습니다. Kotlin과 Jetpack Compose로 만들었으며 무료로 사용할 수 있습니다. 광고와 분석 SDK는 없습니다.
 
-<p align="center"><img src="docs/images/library.png" width="23%" alt="앨범 보관함"> <img src="docs/images/player.png" width="23%" alt="재생 화면"> <img src="docs/images/equalizer.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets.png" width="23%" alt="프리셋"></p>
+<p align="center"><img src="docs/images/library.png" width="23%" alt="앨범 보관함"> <img src="docs/images/player.png" width="23%" alt="재생 화면"> <img src="docs/images/equalizer-en.png" width="23%" alt="이퀄라이저"> <img src="docs/images/presets-en.png" width="23%" alt="프리셋"></p>
 
 ## 주요 기능
 
@@ -32,6 +32,14 @@ PC·NAS·홈 서버에 **Navidrome을 Docker로 실행**하고 음악 폴더를 
 [Docker Compose 예제](examples/navidrome)는 음악 폴더를 읽기 전용으로 연결하고 서버 DB를 별도로 보관합니다. [설정 안내](docs/SERVER-SETUP.ko.md)에 첫 계정 생성부터 Wi-Fi 연결, 집 밖에서 HTTPS로 듣는 방법까지 정리했습니다. Musonic 계정이나 구독은 필요하지 않습니다.
 
 기존 Subsonic/OpenSubsonic 서버가 있다면 새로 설치하지 않고 그대로 연결할 수 있습니다.
+
+| 서버 | Docker 설치 |
+| --- | --- |
+| [Navidrome](https://www.navidrome.org/) | [공식 Docker 안내](https://www.navidrome.org/docs/installation/docker/) |
+| [Gonic](https://github.com/sentriz/gonic) | [프로젝트 Docker 안내](https://github.com/sentriz/gonic/wiki/installation#with-docker) |
+| [Airsonic-Advanced](https://github.com/kagemomiji/airsonic-advanced) | [Docker 안내](https://github.com/kagemomiji/airsonic-advanced#docker) · [Compose 예제](https://github.com/kagemomiji/airsonic-advanced/tree/main/install/compose) |
+
+Navidrome은 Musonic 연결·재생을 확인했습니다. Gonic과 Airsonic-Advanced는 Subsonic API를 제공하지만 Musonic에서 직접 테스트하지는 않았으며, 서버별로 지원 기능이 다를 수 있습니다.
 
 ## 개발 및 참여
 

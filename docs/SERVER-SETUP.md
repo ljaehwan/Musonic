@@ -4,6 +4,16 @@ Musonic is the Android player. Navidrome is a separate, open-source server that 
 
 Already running a Subsonic or OpenSubsonic server? Skip Docker and enter its URL, username and password in Musonic. A Navidrome account works with the default password/token authentication mode. Other server implementations may expose different features.
 
+## Server projects and Docker guides
+
+| Server | Docker installation |
+| --- | --- |
+| [Navidrome](https://www.navidrome.org/) | [Official Docker guide](https://www.navidrome.org/docs/installation/docker/) |
+| [Gonic](https://github.com/sentriz/gonic) | [Project Docker guide](https://github.com/sentriz/gonic/wiki/installation#with-docker) |
+| [Airsonic-Advanced](https://github.com/kagemomiji/airsonic-advanced) | [Docker guide](https://github.com/kagemomiji/airsonic-advanced#docker) · [Compose examples](https://github.com/kagemomiji/airsonic-advanced/tree/main/install/compose) |
+
+Navidrome has been tested with Musonic. Gonic and Airsonic-Advanced provide Subsonic APIs, but have not yet been tested with Musonic; available features may differ.
+
 ## Start Navidrome with Docker
 
 Install Docker with the Compose plugin (included in Docker Desktop). The example pins Navidrome **0.64.2**, and mounts your music read-only.

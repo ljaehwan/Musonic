@@ -2,6 +2,16 @@
 
 Musonic은 Android 플레이어이고, Navidrome은 음악 폴더를 읽어 앱으로 스트리밍하는 별도의 오픈소스 서버입니다. PC·NAS·홈 서버에서 Docker로 실행할 수 있습니다. 이미 Subsonic/OpenSubsonic 서버가 있다면 설치 과정 없이 앱에 기존 서버 주소와 계정을 입력하면 됩니다.
 
+## 다른 서버의 Docker 설치 안내
+
+| 서버 | Docker 설치 |
+| --- | --- |
+| [Navidrome](https://www.navidrome.org/) | [공식 Docker 안내](https://www.navidrome.org/docs/installation/docker/) |
+| [Gonic](https://github.com/sentriz/gonic) | [프로젝트 Docker 안내](https://github.com/sentriz/gonic/wiki/installation#with-docker) |
+| [Airsonic-Advanced](https://github.com/kagemomiji/airsonic-advanced) | [Docker 안내](https://github.com/kagemomiji/airsonic-advanced#docker) · [Compose 예제](https://github.com/kagemomiji/airsonic-advanced/tree/main/install/compose) |
+
+Navidrome은 Musonic 연결·재생을 확인했습니다. Gonic과 Airsonic-Advanced는 Subsonic API를 제공하지만 Musonic에서 직접 테스트하지는 않았으며, 서버별로 지원 기능이 다를 수 있습니다.
+
 ## 1. 서버 준비
 
 Docker와 Compose 플러그인이 필요합니다. Docker Desktop에는 Compose가 포함되어 있습니다.

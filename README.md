@@ -5,7 +5,7 @@
 
 Musonic connects to Subsonic and OpenSubsonic servers, including Navidrome. It keeps your albums, recent listens and sound controls close at hand. Written in Kotlin with Jetpack Compose. Free to use, with no ads or analytics SDKs.
 
-<p align="center"><img src="docs/images/library.png" width="23%" alt="Album library"> <img src="docs/images/player.png" width="23%" alt="Now playing"> <img src="docs/images/equalizer.png" width="23%" alt="Ten-band equalizer"> <img src="docs/images/presets.png" width="23%" alt="Sound presets"></p>
+<p align="center"><img src="docs/images/library.png" width="23%" alt="Album library"> <img src="docs/images/player.png" width="23%" alt="Now playing"> <img src="docs/images/equalizer-en.png" width="23%" alt="Ten-band equalizer"> <img src="docs/images/presets-en.png" width="23%" alt="Sound presets"></p>
 
 ## What it does
 
@@ -33,6 +33,14 @@ Run **Navidrome in Docker**, point it at your music folder, then connect Musonic
 The included [Docker Compose example](examples/navidrome) mounts music read-only and keeps the server database in a separate folder. The [setup guide](docs/SERVER-SETUP.md) walks through first-run setup, phone connection on Wi-Fi, and HTTPS access away from home. No Musonic account or subscription is needed.
 
 Already have a Subsonic/OpenSubsonic server? Use it directly; you don't need another container.
+
+| Server | Docker installation |
+| --- | --- |
+| [Navidrome](https://www.navidrome.org/) | [Official Docker guide](https://www.navidrome.org/docs/installation/docker/) |
+| [Gonic](https://github.com/sentriz/gonic) | [Project Docker guide](https://github.com/sentriz/gonic/wiki/installation#with-docker) |
+| [Airsonic-Advanced](https://github.com/kagemomiji/airsonic-advanced) | [Docker guide](https://github.com/kagemomiji/airsonic-advanced#docker) · [Compose examples](https://github.com/kagemomiji/airsonic-advanced/tree/main/install/compose) |
+
+Navidrome has been tested with Musonic. Gonic and Airsonic-Advanced provide Subsonic APIs, but have not yet been tested with Musonic; available features may differ.
 
 ## Build
 
